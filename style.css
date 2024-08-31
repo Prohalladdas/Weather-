@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0c0824;
+    color: aliceblue;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgContainer {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    rotate: -10deg;
+}
+
+.circle {
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    border-radius: 50%;
+    background: linear-gradient(to right, #a316a8, #ffa6f5);
+    transform: translate(115px, -100px);
+    filter: blur(25px);
+
+}
+
+.circle2 {
+    height: 150px;
+    filter: blur(25px);
+    width: 150px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #1b58ff, #9db1ff);
+    transform: translate(-115px, 100px);
+}
+
+.container {
+    background-color: rgba(63, 63, 63, 0.048);
+    border: none;
+    filter: drop-shadow(2px 2px 2px 2px red);
+    /* box-shadow: 1px 2px 0px 1px rgba(109, 109, 109, 0.088); */
+    box-shadow: 31px 27px 37px -35px rgb(0 0 0 / 38%);
+    backdrop-filter: blur(25px);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 350px;
+    width: 300px;
+    border-radius: 12px;
+    padding: 22px;
+
+}
+
+.searchCont {
+    outline: none;
+    color: #ffffff;
+    display: flex;
+    gap: 1rem;
+    padding: 22px;
+}
+
+.searchCont input {
+    outline: none;
+    color: #ffffff;
+    background: transparent;
+    display: flex;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.searchCont button {
+    outline: none;
+    color: #ffffff;
+    background: transparent;
+    display: flex;
+    border: none;
+    cursor: pointer;
+}
+.searchCont button:hover{
+    color: #dfdfdf;
+
+}
+
+#image {
+    height: 70px;
+}
+
+.feelsLike {
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+.endingpart {
+    margin-top: 70px;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-evenly;
+    width: 300px;
+}
+
+#cloud {
+    margin-top: 5px;
+}
+
+.condition {
+    width: auto;
+    height: auto;
+    line-height: 1.1rem;
+}
+.error{
+    color: red;
+}
+.hide{
+    display: none;
+}

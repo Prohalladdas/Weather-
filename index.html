@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="bgContainer">
+        <div class="circle"></div>
+        <div class="circle2"></div>
+    </div>
+    <!--  -->
+    <div class="container">
+        <div class="error hide">
+            Invalid City
+        </div>
+        <div class="searchCont">
+            <input id="inputLoc" type="text" placeholder="Enter your location">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div>
+            <h2 id="location">Japan, Tokyo</h2>
+            <div style="display: flex;align-items: center; margin-top: 12px;justify-content: center;">
+                <img src="//cdn.weatherapi.com/weather/64x64/day/302.png" id="image"><span style="font-size: 25px;"
+                    id="temp">29°C</span>
+            </div>
+        </div>
+        <div>
+            <div class="feelsLike"> FeelsLike: 35°C</div>
+        </div>
+        <div class="endingpart">
+            <div class="wind">Wind: 13 mp/h <br>
+                <div id="cloud">Cloud: 75</div>
+            </div>
+            <div class="condition">
+                <!-- <div id="Weather">Weather</div> -->
+                <div id="time">Saturday, 8:00 pm</div>
+                <div id="text">Light Rain Showers</div>
+            </div>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
